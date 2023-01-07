@@ -2,7 +2,7 @@
 using namespace std;
 //#define int long long
 const int maxn = 2e5+10;
-// const int inf = 1e18;
+// const int infn = 1e18;
 #define pb push_back
 
 
