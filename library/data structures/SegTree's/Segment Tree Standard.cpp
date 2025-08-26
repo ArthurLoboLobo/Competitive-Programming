@@ -14,7 +14,7 @@ struct segtree {
     void build(int no, int l, int r) {
         if(l == r) {
 			tr[no] = /* inicial value */
-		}+
+		}
         int lc=2*no,rc=2*no+1,mid=(l+r)>>1;
         build(lc,l,mid);
         build(rc,mid+1,r);
