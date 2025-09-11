@@ -9,21 +9,26 @@ query on range L,R -> qry(1,minv,maxv,L,R);
 
 struct segtree {
 
-	/* type */ tr[/* size */];
+    vector</* type */> tr;
 
-	/* type */ mergeseg(/* type */ valL, /* type */ valR) {
+    segtree(int n_) {
+        tr.resize(4*n_+1);
+    }
 
-		/* return merge of valL and valR */
-	}
+    /* type */ mergeseg(/* type */ valL, /* type */ valR) {
+
+        /* return merge of valL and valR */
+    }
 
     void build(int no, int l, int r) {
         if(l == r) {
-			tr[no] = /* inicial value */;
-		}
+            tr[no] = /* inicial value */;
+            return;
+        }
         int lc=2*no,rc=2*no+1,mid=(l+r)>>1;
         build(lc,l,mid);
         build(rc,mid+1,r);
-		tr[no] = mergeseg(tr[lc],tr[rc]);
+        tr[no] = mergeseg(tr[lc],tr[rc]);
     }
 
     void upd(int no, int l, int r, int pos, /* type */ val) {
