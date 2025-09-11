@@ -1,6 +1,6 @@
 /*
 Standard Segment Tree
-(Not tested yet)
+Status: Tested - https://codeforces.com/edu/course/2/lesson/4/1/practice/contest/273169/problem/A
 minv,maxv -> Node 1 interval
 start -> build(1,minv,maxv);
 update position "pos" with "val" -> upd(1,minv,maxv,pos,val);
