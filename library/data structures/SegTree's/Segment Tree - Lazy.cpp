@@ -10,7 +10,7 @@ query on range L,R -> qry(1,minv,maxv,L,R);
 struct segtree {
 
     vector</* type */> tr;
-    vector</* type lazy */> tr;
+    vector</* type lazy */> lz;
 
     segtree(int n_) {
         tr.resize(4*n_+1);
