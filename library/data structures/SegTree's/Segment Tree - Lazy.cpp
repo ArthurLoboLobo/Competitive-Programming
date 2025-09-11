@@ -28,7 +28,7 @@ struct segtree {
         if(l != r) {
             int lc=2*no,rc=2*no+1;
             lz[lc] = /* adds lz[no] to lz[lc] */;
-            lz[rc]+= /* adds lz[no] to lz[rc] */;
+            lz[rc] = /* adds lz[no] to lz[rc] */;
         }
 
         lz[no] = /* neutral value lazy */;
