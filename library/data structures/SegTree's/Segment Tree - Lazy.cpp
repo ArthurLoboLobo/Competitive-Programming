@@ -23,7 +23,7 @@ struct segtree {
     }
 
     void flush(int no, int l, int r) {
-        if(lz[no] == /* neutral value lazy */) continue;
+        if(lz[no] == /* neutral value lazy */) return;
         tr[no] = /* adds lz[no] to tr[no] */;
 
         if(l != r) {
