@@ -9,8 +9,13 @@ query on range L,R -> qry(1,minv,maxv,L,R);
 
 struct segtree {
 
-    /* type */ tr[/* size */];
-    /* type lazy */ lz[/* size */];
+    vector</* type */> tr;
+    vector</* type lazy */> tr;
+
+    segtree(int n_) {
+        tr.resize(4*n_+1);
+        lz.resize(4*n_+1);
+    }
 
     /* type */ mergeseg(/* type */ valL, /* type */ valR) {
 
