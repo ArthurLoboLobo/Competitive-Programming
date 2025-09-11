@@ -1,6 +1,6 @@
 /*
 Lazy Segment Tree
-(Not tested yet)
+Status: Tested - https://codeforces.com/edu/course/2/lesson/5/2/practice/contest/279653/problem/A
 minv,maxv -> Node 1 interval
 start -> build(1,minv,maxv);
 update range (L,R) with val -> upd(1,minv,maxv,L,R,val);
