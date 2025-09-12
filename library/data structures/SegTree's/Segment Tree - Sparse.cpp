@@ -1,6 +1,6 @@
 /*
 Sparse Segment Tree
-Status: Not tested yet
+Status: Tested - https://cses.fi/problemset/task/1144/
 start -> segtree(minv,maxv) - (minv,maxv) = node 1 interval
 update position "pos" with "val" -> update(pos,val);
 query on range l,r -> query(l,r)
