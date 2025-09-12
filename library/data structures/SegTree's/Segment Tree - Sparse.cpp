@@ -40,8 +40,12 @@ struct segtree {
             return no;
         }
         int mid=(l+r)>>1;
-        lc[no] = upd(lc[no],l,mid,pos,val);
-        rc[no] = upd(rc[no],mid+1,r,pos,val);
+        
+        int newlc = upd(lc[no],l,mid,pos,val);
+        lc[no] = newlc;
+        int newrc = upd(rc[no],mid+1,r,pos,val);
+        rc[no] = newrc;
+        
         tr[no] = mergeseg(tr[lc[no]],tr[rc[no]]);
         return no;
     }
