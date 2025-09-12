@@ -52,7 +52,7 @@ struct segtree {
             lz[rc[no]] = /* adds lz[no] to lz[rc[no]] */
         }
 
-        lz[no] = /* neutral value lazy */
+        lz[no] = /* neutral value lazy */;
     }
 
     int upd(int no, int l, int r, int ll, int rr, /* type lazy */ val) {
