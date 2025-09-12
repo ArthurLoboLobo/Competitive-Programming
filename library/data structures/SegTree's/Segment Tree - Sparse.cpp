@@ -42,7 +42,7 @@ struct segtree {
         int mid=(l+r)>>1;
         lc[no] = upd(lc[no],l,mid,pos,val);
         rc[no] = upd(rc[no],mid+1,r,pos,val);
-        tr[no] = mergeseg(tr[lc],tr[rc]);
+        tr[no] = mergeseg(tr[lc[no]],tr[rc[no]]);
         return no;
     }
 
