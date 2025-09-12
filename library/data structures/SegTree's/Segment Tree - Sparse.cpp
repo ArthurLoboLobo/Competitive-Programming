@@ -9,12 +9,12 @@ query on range l,r -> query(l,r)
 struct segtree {
     vector</* type */> tr;
     vector<int> lc,rc;
-    int cntnode, minv, maxv;
+    int cntno, minv, maxv;
 
     segtree(int minv_, int maxv_) {
         minv = minv_;
         maxv = maxv_;
-        cntnode = 1;
+        cntno = 1;
         tr.assign(2,/* neutral value */);
         lc.assign(2,0);
         rc.assign(2,0);
